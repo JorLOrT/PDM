@@ -30,7 +30,7 @@ fun darPista(numeroUsuario: Int, numeroAleatorio: Int) {
 
 fun mostrarMensajeFinal(adivinado: Boolean, intentos: Int) {
     if (adivinado) {
-        var intentosRestantes = 5 - intentos
+        val intentosRestantes = 5 - intentos
         println("Adivinaste el número en $intentosRestantes intentos.")
     } else {
         println("Te quedaste sin intentos.")
