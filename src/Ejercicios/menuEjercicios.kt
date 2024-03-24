@@ -13,7 +13,7 @@ fun menu(){
 }
 
 fun eleccionEjercicio(eleccion:Int): Int{
-    var eleccionMutable = eleccion
+    var eleccionMutable: Int
     //Se le pide al usuario que ingrese el ejercicio a realizar
     eleccionMutable = readln().toInt()
     if(eleccionMutable in 0 .. 5){
