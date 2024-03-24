@@ -12,8 +12,8 @@ fun menu(){
     println("\n Escriba el numero del ejercicio que desee ejecutar: ")
 }
 
-fun eleccionEjercicio(eleccion:Int): Int{
-    var eleccionMutable: Int
+fun eleccionEjercicio(): Int{
+    val eleccionMutable: Int
     //Se le pide al usuario que ingrese el ejercicio a realizar
     eleccionMutable = readln().toInt()
     if(eleccionMutable in 0 .. 5){

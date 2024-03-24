@@ -7,7 +7,7 @@ fun main() {
     do {
         try {
             menu()
-            eleccion = eleccionEjercicio(eleccion)
+            eleccion = eleccionEjercicio()
         }catch (e: NumberFormatException){
             println("Error: debe escribir un numero")
         }
