@@ -1,5 +1,13 @@
 package Ejercicios
 
+/*
+    Ejercicio 4
+    Sistema de Gestión de Empleados
+    Autor: Jorge Ortiz
+    Fecha de creacion: 29/03
+    Ultima modificacion: 30/03
+ */
+
 // Clase abstracta de donde heredaran atributos las subclases de empleados
 abstract class Employee(
     val firstName: String,

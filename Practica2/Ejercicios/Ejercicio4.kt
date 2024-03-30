@@ -1,5 +1,13 @@
 package Ejercicios
 
+/*
+    Ejercicio 4
+    Figuras: Calcula el perimetro y area de la figura elegida
+    Autor: Jorge Ortiz
+    Fecha de creacion: 29/03
+    Ultima modificacion: 30/03
+ */
+
 // Clase abstracta formas
 abstract class Shape {
     abstract val area: Double

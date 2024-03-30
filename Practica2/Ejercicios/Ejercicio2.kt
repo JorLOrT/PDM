@@ -1,5 +1,14 @@
 package Ejercicios
 
+/*
+    Ejercicio 2
+    Producto
+    Permite añadir productos a una tienda, ver productos disponibles y calcular su precio final después de descuentos.
+    Autor: Jorge Ortiz
+    Fecha de creacion: 29/03
+    Ultima modificacion: 30/03
+ */
+
 class Store (private val products: MutableList<Product>){
 
     //Agregar productos a la tienda

@@ -14,10 +14,9 @@ fun menu(){
 }
 
 fun eleccionEjercicio(): Int{
-    val eleccionMutable: Int
     //Se le pide al usuario que ingrese el ejercicio a realizar
-    eleccionMutable = readln().toInt()
-    if(eleccionMutable in 0 .. 5){
+    val eleccionMutable: Int = readln().toInt()
+    if(eleccionMutable in 0 .. 6){
         when(eleccionMutable){
             //EJercicio 1: Cuenta bancaria
             1 ->     primerEjercicio()
@@ -30,7 +29,7 @@ fun eleccionEjercicio(): Int{
             //Ejercicio 5: Sistema de gestión de biblioteca
             5 ->     quintoEjercicio()
             //Ejercicio 6: Sistema de alquiler de vehículoso
-            //6 ->     sextoEjercicio()
+            6 ->     sextoEjercicio()
             //Salir
             0 ->     println("Saliendo del menu")
         }

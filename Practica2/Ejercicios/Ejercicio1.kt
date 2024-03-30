@@ -1,5 +1,14 @@
 package Ejercicios
 
+/*
+    Ejercicio 1
+    Sistema de Cuenta Bancaria
+    Permite al usuario ver su saldo, hacer retiros y hacer depositos
+    Autor: Jorge Ortiz
+    Fecha de creacion: 29/03
+    Ultima modificacion: 30/03
+ */
+
 class BankAccount(private var balance: Double = 1000.0, private val limit: Double = 500.0) {
 
     //Establece el saldo de la cuenta.
@@ -102,5 +111,6 @@ fun primerEjercicio() {
     } catch (e: IllegalArgumentException) {
         println(e.message)
     }
+    println("El monto maximo de retiro es de 500")
     showMenu(myAccount)
 }

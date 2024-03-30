@@ -1,5 +1,13 @@
 package Ejercicios
 
+/*
+    Ejercicio 5
+    Sistema de Gestión de Biblioteca
+    Autor: Jorge Ortiz
+    Fecha de creacion: 30/03
+    Ultima modificacion: 30/03
+ */
+
 // Clase abstracta materiales
 abstract class Material(
     val title: String,
