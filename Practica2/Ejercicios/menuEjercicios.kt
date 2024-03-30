@@ -28,7 +28,7 @@ fun eleccionEjercicio(): Int{
             //Ejercicio 4: Figuras
             4 ->     cuartoEjercicio()
             //Ejercicio 5: Sistema de gestión de biblioteca
-            //5 ->     quintoEjercicio()
+            5 ->     quintoEjercicio()
             //Ejercicio 6: Sistema de alquiler de vehículoso
             //6 ->     sextoEjercicio()
             //Salir
