@@ -24,7 +24,7 @@ fun eleccionEjercicio(): Int{
             //Ejercicio 2: Producto y descuento
             2 ->     segundoEjercicio()
             //Ejercicio 3: Sistema de gestión de empleados
-            //3 ->     tercerEjercicio()
+            3 ->     tercerEJercicio()
             //Ejercicio 4: Figuras
             //4 ->     cuartoEjercicio()
             //Ejercicio 5: Sistema de gestión de biblioteca
