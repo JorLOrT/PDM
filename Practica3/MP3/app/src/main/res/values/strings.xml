@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MP3</string>
+    <string name="encabezado">Pedro Remix</string>
+    <string name="previous">⏮</string>
+    <string name="playStop">⏯</string>
+    <string name="next">⏭</string>
+</resources>
