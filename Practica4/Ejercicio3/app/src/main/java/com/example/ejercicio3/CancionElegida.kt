@@ -17,12 +17,14 @@ class CancionElegida : AppCompatActivity() {
 
         val seekbar = findViewById<SeekBar>(R.id.seekbar)
 
+        // Obtener el nombre de la canción seleccionada del Intent
         val valor = intent.getStringExtra("Valor")
         val imagen = findViewById<ImageView>(R.id.imageView)
 
         var media_player: MediaPlayer
         var btnPlay: Button
 
+        // Seleccionar el recurso de imagen en base al nombre de la canción
         val seleccionada = when(valor){
             "Tuca Donka" -> R.drawable.gato_lentes
             "Real no Fake" -> R.drawable.mapache
@@ -30,6 +32,7 @@ class CancionElegida : AppCompatActivity() {
             else -> R.drawable.gato_lentes
         }
 
+        // Seleccionar el recurso de audio en base al nombre de la canción
         val cancion = when(valor){
             "Tuca Donka" -> R.raw.tuca_donka
             "Real no Fake" -> R.raw.real_no_fake
@@ -38,6 +41,7 @@ class CancionElegida : AppCompatActivity() {
         }
 
         findViewById<TextView>(R.id.titulo).text = valor
+        // Mostrar la imagen de la canción
         imagen.setImageResource(seleccionada)
 
 
@@ -59,6 +63,7 @@ class CancionElegida : AppCompatActivity() {
             }
         }
 
+        // Asignar funcinalidades a la barra de búsqueda
         seekbar.setOnSeekBarChangeListener(object : SeekBar.OnSeekBarChangeListener {
             override fun onProgressChanged(seekBar: SeekBar?, progress: Int, cambiado: Boolean) {
                 if (cambiado) {

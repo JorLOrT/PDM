@@ -14,6 +14,12 @@ import androidx.core.view.WindowInsetsCompat
 class MainActivity : AppCompatActivity() {
 
 
+    /*
+    Autor: Jorge Ortiz
+    Fecha de creación: 21/04/2024
+    Fecha de ultima modificación: 21/04/2024
+    Reproductor de Música versión 2
+     */
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -25,6 +31,7 @@ class MainActivity : AppCompatActivity() {
         val spinner = findViewById<Spinner>(R.id.spinnerCanciones)
         val btnIr = findViewById<Button>(R.id.btn_ir)
 
+        // Se comprueba si el Spinner no es nulo antes de configurar el adaptador
         if(spinner != null){
             val adapter = ArrayAdapter(this, android.R.layout.simple_spinner_item, txtCanciones)
             spinner.adapter = adapter
@@ -35,6 +42,7 @@ class MainActivity : AppCompatActivity() {
             val cancionElegida = spinner.selectedItem.toString()
 
             val intent = Intent(this, CancionElegida:: class.java)
+            // Se agrega el nombre de la canción seleccionada como un extra al Intent
             intent.putExtra("Valor", cancionElegida)
             startActivity(intent)
         }
