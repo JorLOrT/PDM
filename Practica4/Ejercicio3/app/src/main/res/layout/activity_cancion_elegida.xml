@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ventana_cancion"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="24dp"
+        android:textColor="@color/main_color">
+    </TextView>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:padding="20dp"
+        />
+
+    <SeekBar
+        android:id="@+id/seekbar"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:progressTint="@color/main_color"
+        android:tickMarkTint="@color/main_color"
+        android:thumbTint="@color/main_color"
+        android:progress="50"/>
+
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+        <Button
+            android:id="@+id/btn_previous"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/underline"
+            android:text="@string/previous"
+            android:textColor="@color/main_color"
+            app:cornerRadius="20dp"
+            app:strokeColor="@color/main_color"
+            app:strokeWidth="2dp" />
+
+        <Button
+            android:id="@+id/btn_play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:backgroundTint="@color/underline"
+            android:layout_weight="1"
+            app:cornerRadius="20dp"
+            android:onClick="playMusic"
+            android:text="@string/playStop"
+            android:textColor="@color/main_color"
+            app:strokeColor="@color/main_color"
+            app:strokeWidth="2dp"/>
+
+        <Button
+            android:id="@+id/btn_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/underline"
+            android:text="@string/next"
+            android:textColor="@color/main_color"
+            app:cornerRadius="20dp"
+            app:strokeColor="@color/main_color"
+            app:strokeWidth="2dp"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_volver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/main_color"
+        android:text="@string/btn2_text" />
+
+</LinearLayout>

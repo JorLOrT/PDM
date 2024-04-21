@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Ejercicio 3</string>
+    <string name="tv_text">Elige la cancion</string>
+    <string name="btn1_text">Ir a Canción</string>
+    <string name="btn2_text">Volver</string>
+
+    <string name="previous">⏮</string>
+    <string name="playStop">⏯</string>
+    <string name="next">⏭</string>
+
+    <string-array name="canciones">
+        <item>Tuca Donka</item>
+        <item>Caminar</item>
+        <item>Real no Fake</item>
+    </string-array>
+
+</resources>
