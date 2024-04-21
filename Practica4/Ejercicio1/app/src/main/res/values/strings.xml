@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Ejercicio 1</string>
+    <string name="tv_text">Elige la imagen</string>
+    <string name="btn1_text">Ir</string>
+    <string name="btn2_text">Volver</string>
+
+    <string-array name="imagenes">
+        <item>Gato</item>
+        <item>Mapache</item>
+        <item>Perro</item>
+    </string-array>
+
+</resources>
