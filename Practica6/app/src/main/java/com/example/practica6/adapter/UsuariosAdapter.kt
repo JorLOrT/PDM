@@ -6,7 +6,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.practica6.R
 import com.example.practica6.Usuario
 
-class UsuariosAdapter(val items:List<Usuario>): RecyclerView.Adapter<UsuarioViewHolder>() {
+class UsuariosAdapter(var items:MutableList<Usuario>): RecyclerView.Adapter<UsuarioViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): UsuarioViewHolder {
         val itemView = LayoutInflater.from(parent.context).inflate(R.layout.item_usuario, parent, false)
         return UsuarioViewHolder(itemView)
@@ -21,4 +21,20 @@ class UsuariosAdapter(val items:List<Usuario>): RecyclerView.Adapter<UsuarioView
         val item = items[position]
         holder.render(item)
     }
+
+    fun addUsuario(usuario: Usuario){
+        items.add(0,usuario)
+        notifyItemInserted(0)
+    }
+
+    fun deleteUsuario(index:Int){
+        items.removeAt(index)
+        notifyItemRemoved(index)
+    }
+
+    fun editUsuario(index: Int, usuario: Usuario){
+        items[index] = usuario
+        notifyItemChanged(index)
+    }
+
 }
