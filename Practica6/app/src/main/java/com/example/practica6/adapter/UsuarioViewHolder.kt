@@ -4,6 +4,7 @@ import android.view.View
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.core.graphics.drawable.toDrawable
+import androidx.navigation.NavController
 import androidx.recyclerview.widget.RecyclerView
 import com.example.practica6.R
 import com.example.practica6.Usuario
@@ -23,5 +24,6 @@ class UsuarioViewHolder(itemView: View): RecyclerView.ViewHolder(itemView) {
             "avatar_2" -> imagen.setImageResource(R.drawable.avatar_2)
             "avatar_3" -> imagen.setImageResource(R.drawable.avatar_3)
         }
+
     }
 }
