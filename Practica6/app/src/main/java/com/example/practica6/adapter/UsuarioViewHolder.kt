@@ -16,5 +16,6 @@ class UsuarioViewHolder(itemView: View): RecyclerView.ViewHolder(itemView) {
         viewNombre.text = item.nombre
         viewEdad.text = item.edad.toString()
         viewCorreo.text = item.email
+        imagen.setImageResource(R.drawable.ic_launcher_foreground)
     }
 }
