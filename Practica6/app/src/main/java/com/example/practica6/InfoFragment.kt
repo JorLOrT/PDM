@@ -21,19 +21,19 @@ class InfoFragment : Fragment(R.layout.fragment_info) {
 
         arguments.let {bundle->
             nombre = bundle?.getString("nombre").toString()
-            edad = bundle?.getString("edad").toString().toInt()
+            edad = bundle?.getInt("edad").toString().toInt()
             correo = bundle?.getString("correo").toString()
             imagen = bundle?.getString("imagen").toString()
         }
 
-        val txtNombre = view.findViewById<TextView>(R.id.txtNombreU)
-        val txtEdad = view.findViewById<TextView>(R.id.txtEdadU)
+        val txtNombreU = view.findViewById<TextView>(R.id.txtNombreU)
+        val txtEdadU = view.findViewById<TextView>(R.id.txtEdadU)
         val txtCorreo = view.findViewById<TextView>(R.id.txtCorreo)
         val imageView = view.findViewById<ImageView>(R.id.imageViewU)
 
-        txtNombre.text = nombre
-        txtEdad.text = edad.toString()
-        txtCorreo.text = correo
+        txtNombreU.text = nombre
+        txtEdadU.text = "Edad: $edad"
+        txtCorreo.text = "Correo: $correo"
         val eleccion = imagen
         when(eleccion){
             "avatar_1" -> imageView.setImageResource(R.drawable.avatar_1)
